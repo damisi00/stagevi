@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="./css/admin-user.css">
 </head>
 <body>
-       
-   <div class="row">
+    <div class="row gx-0">
         <!-- side bar beginning -->
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white side-br col-2 col-sm col-md d-sm-none d-md-block d-md-none d-lg-block" >
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-            <img src="./images/Logo_white.svg" class="img-fluid">
+            <img src="./images/Logo_white.svg" class="img-fluid mx-auto side-br-logo py-2">
             </a>
             <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sideBarNav" aria-controls="sideBarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-center" id="sideBarNav"> -->
-                <ul class="nav nav-pills flex-column mb-auto my-5">
+                <ul class="nav nav-pills flex-column mb-auto my-5 text-center">
                 <li class="nav-item mb-4">
                     <a href="#" class="nav-link text-white" aria-current="page">
                     Dashboard
@@ -57,10 +56,10 @@
 
      <!-- Sidebar End     -->
    <!-- beginning of nav  -->
-    <main class="col-10 col-md-12 col-sm-12 col-lg-10 ps-0 all-percent">
+    <main class="col-10 col-md-12 col-sm-12 col-lg-10 all-percent p-0">
         <nav class="navbar navbar-expand-md navbar-dark bg-chartpool col-12" aria-label="Fourth navbar example">
             <div class="container">
-            <a class="navbar-brand logo-brand" href="#"><img src="./images/Logo_white.svg" class="d-lg-none"></a>
+            <a class="navbar-brand logo-brand" href="#"><img src="./images/Logo_white.svg" class="d-lg-none white-logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,10 +67,10 @@
             <div class="collapse navbar-collapse" id="navbarsExample04">
                 <ul class="navbar-nav ms-auto mb-2 mb-md-0 d-flex align-items-center ">
                 <li class="nav-item">
-                    <a class="nav-link"  href="#"><img src="./images/notification_important_24px.svg" class="" alt="notification icon"></a>
+                    <a class="nav-link"  href="#"><img src="./images/notification _bell.png" class="rounded" width="25px" height="25px" alt="notification icon"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="./images/Mask Group (1).png" class="" alt="admin-icon"></a>
+                    <a class="nav-link" href="#"><img src="./images/Mask Group (1).png" class="rounded" width="50px" height="50px" alt="admin-icon"></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle fw-bold active" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Admin</a>
@@ -88,13 +87,11 @@
                    
                 </li>
                 </ul>
-                <div class="">
                 
-                </div>
             </div>
             </div>
         </nav>
-        <section class="col col-lg-10 col-sm-10 col-md-10 mx-md-auto ">
+        <section class="col col-lg-10 col-sm-10 col-md-10 mx-md-auto mx-auto">
             <div class=" add-btn 4 my-4 c px-3 d-flex justify-content-between">
                 <!--button to add user -->
                     <button type="button" class="btn btn-primary btn-lg next-link mod-btn1" data-bs-toggle="modal" data-bs-target="#addUserModal" data-bs-whatever="">Add a user</button>
@@ -581,18 +578,18 @@
                     </tbody>
                 </table>
             </div>
-            <div class=" entries d-flex justify-content-between align-items-center col-12 px-4">
+            <div class=" entries d-flex justify-content-between align-items-center col-12 px-4 pb-3">
                 <p class=" entries-showing text-black fs-6 fw-bold">showing 1 to 10 of 1500 entries</p>
                 <nav aria-label="Standard pagination example">
                     <ul class="pagination">
                     <li class="page-item">
-                        <a class="page-link border-0" href="#" aria-label="Previous">
+                        <!-- <a class="page-link border-0" href="#" aria-label="Previous">
                         <span aria-hidden="true">«</span>
-                        </a>
+                        </a> -->
                     </li>
                     <li class="page-item"><a class="page-link next-link" href="#">1</a></li>
                     <li class="page-item">
-                        <a class="page-link border-0" href="#" aria-label="Next">
+                        <a class="page-link border-0 pg-link fw-bolder" href="#" aria-label="Next">
                         <span aria-hidden="true">»</span>
                         </a>
                     </li>
@@ -604,6 +601,6 @@
     </div>
    <!-- End od Nav -->
     
-    <script src="./script/bootstrap.min.js"></script> 
+    <script src="./script/bootstrap.min.js"></script>
 </body>
 </html>
