@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>test-user</title>
+    <title>admin-users</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/admiin_user.css">
 </head>
@@ -19,7 +19,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end align-center" id="sideBarNav"> -->
-                <ul class="nav nav-pills flex-column mb-auto my-5 text-center nav-ul-side">
+                <ul class="nav nav-pills flex-column mb-auto my-5 text-center">
                 <li class="nav-item mb-4">
                     <a href="#" class="nav-link text-white" aria-current="page">
                     Dashboard
@@ -370,7 +370,7 @@
                         </form>
                         </div>
                         <div class="modal-footer border-0 d-flex justify-content-evenly w-100">
-                            <button type="submit" class="btn next-link mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Done</button>
+                            <button type="submit" class="btn next-link mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn  btn-lg text-dark border-primary btn-cancel" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                         </div>
                     </div>
@@ -408,7 +408,7 @@
                     <h4>Do you want to block User_XYZ?</h4>
                     </div>
                     <div class="modal-footer border-0 d-flex justify-content-evenly w-100">
-                        <button type="submit" class="btn next-link border-primary mod-btn1 btn-lg text-white" data-bs-dismiss="modal"> Yes, block</button>
+                        <button type="submit" class="btn next-link border-primary mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Yes, Block</button>
                         <button type="button" class="btn  btn-lg text-dark border-primary  btn-c2" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                     </div>
                 </div>
@@ -425,7 +425,7 @@
                     <h4>Do you want to edit User_XYZ's profile?</h4>
                     </div>
                     <div class="modal-footer border-0 d-flex justify-content-evenly w-100">
-                        <button type="submit" class="btn next-link border-primary mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Yes, edit</button>
+                        <button type="submit" class="btn next-link border-primary mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Yes, Okay</button>
                         <button type="button" class="btn  btn-lg text-dark border-primary  btn-c2" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                     </div>
                 </div>
@@ -442,7 +442,7 @@
                     <h4>Do you want to unblock User_XYZ?</h4>
                     </div>
                     <div class="modal-footer border-0 d-flex justify-content-evenly w-100">
-                        <button type="submit" class="btn next-link border-primary mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Yes, block</button>
+                        <button type="submit" class="btn next-link border-primary mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Unblock user</button>
                         <button type="button" class="btn  btn-lg text-dark border-primary  btn-c2" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                     </div>
                 </div>
@@ -458,7 +458,7 @@
                     <h4>Do you want to delete User_XYZ?</h4>
                     </div>
                     <div class="modal-footer border-0 d-flex justify-content-evenly w-100">
-                        <button type="submit" class="btn next-link border-primary mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Yes, delete</button>
+                        <button type="submit" class="btn next-link border-primary mod-btn1 btn-lg text-white" data-bs-dismiss="modal">Delete</button>
                         <button type="button" class="btn  btn-lg text-dark border-primary  btn-c2" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
                     </div>
                 </div>
@@ -467,112 +467,114 @@
             <!-- End of Modal for delete user  -->
 
             <!-- Table section -->
-            <div class="tab-div px-4 px-sm-1 col-12">
-                <table class=" table table-responsive  table-bordered border-dark text-center user-tab rounded-3">
+            <div class="table-bordered border-dark p-3">
+                <div class="table-responsive" id="tab-div">
+                <table class=" table table-bordered border-dark  text-center user-tab ">
                     <thead>
                         <tr class="bold">
-                            <th scope="col" class=" fw-bold">S/N</th>
-                            <th scope="col">ID</th>
-                            <th scope="col">Full Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Phone number</th>
-                            <th scope="col">Number of polls</th>
-                            <th scope="col"> Actions</th>
+                            <th class=" fw-bold">S/N</th>
+                            <th>ID</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Phone number</th>
+                            <th>Number of polls</th>
+                            <th> Actions</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row">1</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark"data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever=""  >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                         <tr>
                             <th scope="row">4</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                         <tr>
                             <th scope="row">5</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                         <tr>
                             <th scope="row">6</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                         <tr>
                             <th scope="row">7</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever=""  >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                         <tr>
                             <th scope="row">8</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever=""  >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                         <tr>
                             <th scope="row">9</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td> 
                         </tr>
                         <tr>
                             <th scope="row">10</th>
-                            <td>0024</td>
-                            <td>Anthony Hopkins Daniel</td>
-                            <td>anthonyhopkins@gmail.com</td>
-                            <td>+2347054323456</td>
-                            <td>789</td>
-                            <td><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
+                            <td data-title="id">0024</td>
+                            <td data-title="name">Anthony Hopkins Daniel</td>
+                            <td data-title="email">anthonyhopkins@gmail.com</td>
+                            <td data-title="tel">+2347054323456</td>
+                            <td data-title="polls">789</td>
+                            <td data-title="actions"><a href="#viewUser" class="view-link text-decoration-none text-dark" data-bs-toggle="modal" data-bs-target="#viewUser" data-bs-whatever="" >view</a></td>
                         </tr>
                     </tbody>
                 </table>
+                </div>
             </div>
             <div class=" entries d-flex justify-content-between align-items-center col-12 px-4">
                 <p class=" entries-showing text-black fs-6 fw-bold">showing 1 to 10 of 1500 entries</p>

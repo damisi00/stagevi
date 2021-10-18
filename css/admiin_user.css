@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 .side-br{
     background-color: #09174b;
     height: auto;
@@ -18,7 +19,6 @@
 .all-percent{
     height: auto;
     width: 80%;
-    padding: 0 !important;
 }
 .bg-chartpool{
     background-color: #2a5297;
@@ -56,7 +56,6 @@ background-color:rgba(238, 238, 238, 0.507);
 }
 table, th, td{
     font-family: 'Roboto', sans-serif;
-    border-radius: 3rem !important;
 }
 .mod-btn1{
     width: 180px;
@@ -120,20 +119,30 @@ table, th, td{
     width: 180px;
     box-shadow:  0px 2px 2px rgba(0, 0, 0.25);
 }
-@media (min-width:769px) and (max-width:1024px) {
-    .side-br{
-       display: none !important;
-    }
-    .all-percent{
-        width: 100vw !important;
-    }
-}
-@media (max-width:769px) {
+@media (max-width:800px) {
     .side-br{
         display: none !important;
     }
     .all-percent{
         width: 100vw;
     }
-    
+    #tab-div tbody, 
+    #tab-div tr,
+    #tab-div td{
+        display: block;
+    }
+    #tab-div thead tr{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+    #tab-div td{
+        position: relative;
+        padding-left: 50%;
+    }
+    #tab-div td::before{
+        content: attr(datatitle);
+        position: absolute;
+        left: 6px;
+    }
 }
