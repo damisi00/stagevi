@@ -10,7 +10,7 @@
 }
 .all-percent{
     height: auto;
-    padding: 0;
+    padding: 0 !important;
 }
 .bg-chartpool{
     background-color: #2a5297;
